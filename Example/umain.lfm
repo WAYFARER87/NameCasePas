@@ -1,0 +1,68 @@
+object fMain: TfMain
+  Left = 300
+  Height = 467
+  Top = 172
+  Width = 805
+  Caption = 'NameCase Example'
+  ClientHeight = 467
+  ClientWidth = 805
+  LCLVersion = '3.99.0.0'
+  OnShow = FormShow
+  object mmResult: TMemo
+    Left = 0
+    Height = 417
+    Top = 50
+    Width = 805
+    Align = alClient
+    ReadOnly = True
+    TabOrder = 0
+  end
+  object pnTop: TPanel
+    Left = 0
+    Height = 50
+    Top = 0
+    Width = 805
+    Align = alTop
+    BevelOuter = bvNone
+    ClientHeight = 50
+    ClientWidth = 805
+    TabOrder = 1
+    object edName: TEdit
+      Left = 24
+      Height = 34
+      Top = 8
+      Width = 376
+      TabOrder = 0
+      Text = 'Иванов Иван Иванович'
+      TextHint = 'Иванов Иван Иванович'
+    end
+    object btClear: TSpeedButton
+      AnchorSideTop.Control = edName
+      AnchorSideBottom.Control = edName
+      AnchorSideBottom.Side = asrBottom
+      Left = 400
+      Height = 32
+      Top = 8
+      Width = 32
+      Caption = '◂'
+      OnClick = btClearClick
+    end
+    object btStart: TButton
+      Left = 432
+      Height = 32
+      Top = 8
+      Width = 112
+      Caption = 'Просклонять'
+      TabOrder = 1
+      OnClick = btStartClick
+    end
+  end
+  object BitBtn1: TBitBtn
+    Left = 24
+    Height = 30
+    Top = 64
+    Width = 75
+    Caption = 'BitBtn1'
+    TabOrder = 2
+  end
+end
