@@ -102,8 +102,8 @@ end;
 
 function TNameCase.GetMiddleName(AMiddleName: string; ACase: integer): string;
 begin
-   self.lastname := AMiddleName;
-   Result := inflect(lastname, ACase, 'middlename');
+   self.middlename := AMiddleName;
+   Result := inflect(middlename, ACase, 'middlename');
 end;
 
 function TNameCase.GetGender: String;
